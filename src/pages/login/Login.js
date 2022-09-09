@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import {Container, SubContainer} from './StyledLogin';
 import Button from '../../components/Button'
 import Input from '../../components/Input';
+import { useNavigate } from 'react-router-dom';
 
 
 function Login() {
+  const navigate = useNavigate ()
 
   const [email, setEmail] = React.useState();
   const [password, setPassword] = React.useState();
@@ -23,7 +25,7 @@ function Login() {
   function LoginButton(){
    
     if (email === "admin@mixfiscal.com.br" && password === "mix@123456"){
-      alert("Login efetuado")
+      navigate('/home')
     } else {
       alert("E-mail ou senha não cadastrados")
     }
@@ -44,4 +46,5 @@ function Login() {
 }
 
 export default Login;
+
 
