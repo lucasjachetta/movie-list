@@ -12,11 +12,15 @@ export const Container = styled.div`
 
 export const SubContainer = styled.div`
     display: flex;
-    color: white;
     height: 30%;
     width: 100%;
     background-color: black;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
+
+    h1 {
+        color: white;
+    }
 `

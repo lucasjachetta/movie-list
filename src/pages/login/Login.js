@@ -34,8 +34,8 @@ function Login() {
     <Container>
 
       <SubContainer>
-      <h1>Bem vindo</h1>
-        <Input onChange={GetEmail} type="email" class="inputEmail" name="inputEmail" required placeholder="Email"></Input>
+      <h1>Bem-vindo</h1>
+        <Input onChange={GetEmail} type="email" class="inputEmail" name="inputEmail" required placeholder="E-mail"></Input>
         <Input onChange={GetPassword} type="password" class="inputSenha" name="inputSenha" required placeholder="Senha"></Input>
         <Button onClick={LoginButton}>Entrar</Button>    
       </SubContainer>   
@@ -45,5 +45,3 @@ function Login() {
 
 export default Login;
 
-
-/*26 min*/
