@@ -3,6 +3,7 @@ import {Container} from './StyledHome';
 import {MovieList} from '../../components/MovieList' 
 import {Movie} from '../../components/Movie' 
 import { APIKey } from '../../config/key';
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,7 +30,7 @@ function Home() {
         {movies.map(movie => {
           return(
             <Movie key={movie.id}>
-              <a href={movie.url}><img alt={movie.title} src={`${image_url}${movie.poster_path}`}/></a>
+              <Link to={`/details/${movie.id}`}><img alt={movie.title} src={`${image_url}${movie.poster_path}`}/></Link>
               <span>{movie.title}</span>
             </Movie>
           )
