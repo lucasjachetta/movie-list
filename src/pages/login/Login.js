@@ -24,7 +24,7 @@ function Login() {
   
   function HandleHome(){
    
-    if (email === "lucas@gmail.com.br" && password === "123456"){
+    if (email === "lucas@gmail.com.br" && password === "123456ljp"){
       navigate('/home')
     } else {
       alert("E-mail ou senha não cadastrados")
