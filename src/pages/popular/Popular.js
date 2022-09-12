@@ -8,6 +8,7 @@ import Button from "../../components/Button"
 
 
 
+
 function Popular() {
 
   const image_url = 'https://image.tmdb.org/t/p/w500'

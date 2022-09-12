@@ -41,10 +41,22 @@ export const CategoryContainer = styled.div`
     width: 300px;
     height: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: grey;
     border-radius: 1rem;
+    font-weight: bold;   
+    
+
+    img {
+        height: 300px;
+        width: 300px;
+    }
+
+    :hover{
+        opacity: 0.5;
+        transition: 0.3s;
+    }
 
 
 
