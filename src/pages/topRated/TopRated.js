@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import {ButtonContainer, Container} from './StyledTopRated';
+import {ButtonContainer, Container, Header} from '../../components/CategoryPages';
 import {MovieList} from '../../components/MovieList' 
 import {Movie} from '../../components/Movie' 
 import { APIKey } from '../../config/key';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from "../../components/Button"
+import TopRatedImage from '../../assets/top-rated.svg'
 
 
 
@@ -27,9 +28,12 @@ function TopRated() {
 
   return (
 
-    <Container> 
-
-      <h1>OS MAIS BEM AVALIADOS</h1>
+    <Container>
+      <Header>
+      <Button onClick={HandleHome}>Voltar</Button>      
+      <h1>OS MAIS BEM AVALIADOS DE TODOS OS TEMPOS</h1>
+      <img className='category-img' src={TopRatedImage}/>
+      </Header>
 
       <MovieList>
 

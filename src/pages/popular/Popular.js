@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import {Container, ButtonContainer} from './StyledPopular';
+import {ButtonContainer, Container, Header} from '../../components/CategoryPages';
 import {MovieList} from '../../components/MovieList' 
 import {Movie} from '../../components/Movie' 
 import { APIKey } from '../../config/key';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from "../../components/Button"
+import PopularImage from '../../assets/popular.svg'
 
 
 
@@ -31,7 +32,11 @@ function Popular() {
 
     <Container> 
 
-      <h1>OS MAIS POPULARES</h1>
+      <Header>
+      <Button onClick={HandleHome}>Voltar</Button>      
+      <h1>OS QUE ESTÃO EM ALTA</h1>
+      <img className='category-img' src={PopularImage}/>
+      </Header>
 
       <MovieList>
 

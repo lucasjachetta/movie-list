@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const SubContainer = styled.div`
     display: flex;
-    height: 30%;
+    height: 40%;
     width: 100%;
     background-color: black;
     flex-direction: column;
@@ -24,6 +24,11 @@ export const SubContainer = styled.div`
         color: white;
     }
 
+    .logo{
+        color: #FF0000;
+        font-weight: BOLD;
+    }
+    
     button {
     background-color: #FF0000;
     color: #FFFFFF;
@@ -31,6 +36,5 @@ export const SubContainer = styled.div`
     height: 64px;
     border: none;
     font-size: 18px;
-    border-radius: 8px;
-    }
+    border-radius: 8px;}
 `

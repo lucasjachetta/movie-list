@@ -36,7 +36,7 @@ function Login() {
     <Container>
 
       <SubContainer>
-      <h1>Bem-vindo</h1>
+      <h1>Bem-vindo ao <span className='logo'>Movie-List</span></h1>
         <Input onChange={GetEmail} type="email" class="inputEmail" name="inputEmail" required placeholder="E-mail"></Input>
         <Input onChange={GetPassword} type="password" class="inputSenha" name="inputSenha" required placeholder="Senha"></Input>
         <Button onClick={HandleHome}>Entrar</Button>    

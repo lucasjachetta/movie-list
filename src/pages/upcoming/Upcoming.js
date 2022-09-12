@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import {Container, ButtonContainer} from './StyledUpcoming';
+import {ButtonContainer, Container, Header} from '../../components/CategoryPages';
 import {MovieList} from '../../components/MovieList' 
 import {Movie} from '../../components/Movie' 
 import { APIKey } from '../../config/key';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from "../../components/Button"
+import UpcomingImage from '../../assets/upcoming.svg'
 
 
 
@@ -29,7 +30,11 @@ function Upcoming() {
 
     <Container> 
 
-      <h1>OS QUE ESTÃO POR VIR</h1>
+      <Header>
+      <Button onClick={HandleHome}>Voltar</Button>      
+      <h1>O QUE ESTÁ POR VIR</h1>
+      <img className='category-img' src={UpcomingImage}/>
+      </Header>
 
       <MovieList>
 
