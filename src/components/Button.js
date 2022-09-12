@@ -10,6 +10,11 @@ const Button = styled.button `
     font-size: 18px;
     border-radius: 8px;
     cursor: pointer;
+
+    :hover{
+        background-color: #800000;
+        transition: all 0.3s;
+    }
 `
 
 
