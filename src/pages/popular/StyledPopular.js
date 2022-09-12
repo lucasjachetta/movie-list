@@ -11,3 +11,14 @@ export const Container = styled.div`
 
 `
 
+export const ButtonContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+
+    button{
+        height: 50px;
+        width: 300px;
+    }
+`

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Container} from './StyledTopRated';
+import {ButtonContainer, Container} from './StyledTopRated';
 import {MovieList} from '../../components/MovieList' 
 import {Movie} from '../../components/Movie' 
 import { APIKey } from '../../config/key';
@@ -30,7 +30,6 @@ function TopRated() {
     <Container> 
 
       <h1>OS MAIS BEM AVALIADOS</h1>
-      <Button onClick={HandleHome}>Voltar</Button>
 
       <MovieList>
 
@@ -44,6 +43,12 @@ function TopRated() {
         })}
 
       </MovieList>
+
+      <ButtonContainer>
+
+      <Button onClick={HandleHome}>Voltar</Button>
+
+      </ButtonContainer>
 
 
     </Container>

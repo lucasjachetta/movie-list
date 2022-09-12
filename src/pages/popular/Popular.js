@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Container} from './StyledPopular';
+import {Container, ButtonContainer} from './StyledPopular';
 import {MovieList} from '../../components/MovieList' 
 import {Movie} from '../../components/Movie' 
 import { APIKey } from '../../config/key';
@@ -31,7 +31,6 @@ function Popular() {
     <Container> 
 
       <h1>OS MAIS POPULARES</h1>
-      <Button onClick={HandleHome}>Voltar</Button>
 
       <MovieList>
 
@@ -45,6 +44,12 @@ function Popular() {
         })}
 
       </MovieList>
+
+      <ButtonContainer>
+
+        <Button onClick={HandleHome}>Voltar</Button>
+
+      </ButtonContainer>
 
 
     </Container>

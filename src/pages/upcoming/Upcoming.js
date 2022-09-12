@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Container} from './StyledUpcoming';
+import {Container, ButtonContainer} from './StyledUpcoming';
 import {MovieList} from '../../components/MovieList' 
 import {Movie} from '../../components/Movie' 
 import { APIKey } from '../../config/key';
@@ -30,7 +30,6 @@ function Upcoming() {
     <Container> 
 
       <h1>OS QUE ESTÃO POR VIR</h1>
-      <Button onClick={HandleHome}>Voltar</Button>
 
       <MovieList>
 
@@ -44,6 +43,12 @@ function Upcoming() {
         })}
 
       </MovieList>
+
+      <ButtonContainer>
+
+        <Button onClick={HandleHome}>Voltar</Button>
+
+      </ButtonContainer>
 
 
     </Container>
