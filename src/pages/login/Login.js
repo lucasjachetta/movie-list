@@ -24,7 +24,7 @@ function Login() {
   
   function HandleHome(){
    
-    if (email === "admin@mixfiscal.com.br" && password === "mix@123456" || email === "lucas@gmail.com.br" && password === "123456"){
+    if (email === "lucas@gmail.com.br" && password === "123456"){
       navigate('/home')
     } else {
       alert("E-mail ou senha não cadastrados")
