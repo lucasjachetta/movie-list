@@ -22,18 +22,19 @@ function Home() {
 
     <Container> 
 
-          <h1>Escolha os filmes que deseja listar</h1>
+          <h1>Movie-List</h1>
+          <h2>Escolha a categoria de filmes que deseja listar</h2>
 
           <SubContainer>
 
-          <Link to={'/popular'}>
+          <Link className='link' to={'/popular'}>
           <CategoryContainer>
               <img src={PopularImage}/>
               <span>Os que estão em alta</span>
             </CategoryContainer>
           </Link>
           
-          <Link to={'/top-rated'}>
+          <Link className='link' to={'/top-rated'}>
           <CategoryContainer>
               <img src={TopRatedImage}/>
               <span>Aclamados pela crítica</span>
@@ -41,7 +42,7 @@ function Home() {
           </Link>
           
           
-          <Link to={'/upcoming'}>
+          <Link className='link' to={'/upcoming'}>
             <CategoryContainer>
               <img src={UpcomingImage}/>
               <span>Os que estão por vir</span>

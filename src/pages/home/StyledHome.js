@@ -9,12 +9,17 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .link{
+        text-decoration: none;
+    }
+   
     
 
     h1{
         text-align: center;
-        margin: 8rem 0;
-        color: white;
+        margin: 8rem 0 4rem 0;
+        color: #6C63FF;
     }
 
     button{
@@ -30,6 +35,7 @@ export const SubContainer = styled.div`
     background-color: black;
     align-items: center;
     justify-content: space-between;
+    
 
 
     h1 {
@@ -52,6 +58,7 @@ export const CategoryContainer = styled.div`
         height: 300px;
         width: 300px;
     }
+
 
     :hover{
         opacity: 0.5;
