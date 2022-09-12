@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 const Button = styled.button `
-    background-color: #FF0000;
+    background-color: #6C63FF;
     color: #FFFFFF;
     width: 70px;
     height: 30px;
@@ -12,7 +12,7 @@ const Button = styled.button `
     cursor: pointer;
 
     :hover{
-        background-color: #800000;
+        background-color: #0A0487;
         transition: all 0.3s;
     }
 `

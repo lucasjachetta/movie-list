@@ -25,13 +25,11 @@ export const SubContainer = styled.div`
     }
 
     .logo{
-        color: #FF0000;
+        color: #6C63FF;
         font-weight: BOLD;
     }
     
     button {
-    background-color: #FF0000;
-    color: #FFFFFF;
     width: 342px;
     height: 64px;
     border: none;
