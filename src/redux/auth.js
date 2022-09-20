@@ -11,15 +11,15 @@ export const authSlice = createSlice({
     userData: initialUser(),
   },
   reducers: {
-    handleLogin: (state, action) => {
+    HandleLogin: (state, action) => {
       console.log("useData", action);
     },
-    handleLogout: () => {
+    HandleLogout: () => {
       localStorage.clear();
     },
   },
 });
 
-export const { handleLogin, handleLogout } = authSlice.actions;
+export const { HandleLogin, HandleLogout } = authSlice.actions;
 
 export default authSlice.reducer;
