@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import {useDispatch} from 'react-redux';
-import {HandleLogin} from '../../redux/auth';
+import React, { useEffect, useState } from 'react';
+import {useDispatch, useSelector} from 'react-redux';
+import {HandleLogin, SetLoginError} from '../../redux/auth';
 import {Container, SubContainer} from './StyledLogin';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
@@ -14,6 +14,21 @@ function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const {logged, loginError} = useSelector(state => state.auth)
+
+  useEffect(()=>{
+    console.log("logged", logged)
+    console.log("loginError",loginError)
+    
+    if (logged){
+      navigate('/home')
+    } 
+    
+    if (loginError) {
+      alert("E-mail ou senha não cadastrados")
+      dispatch(SetLoginError(false))
+    }
+  },[logged, loginError, navigate])
 
 
   function GetEmail(e) {
@@ -28,10 +43,14 @@ function Login() {
   
   const HandleAuth = () => {
 
-    dispatch(HandleLogin())
+    dispatch(HandleLogin({email, password}))
    
     
   } 
+
+
+
+  
 
   return (
     <Container>

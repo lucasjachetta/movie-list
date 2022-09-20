@@ -9,10 +9,30 @@ export const authSlice = createSlice({
   name: "authentication",
   initialState: {
     userData: initialUser(),
+    logged: false,
+    loginError: false,
   },
+
   reducers: {
+    
+    SetLoginError: (state, action) => {
+        state.loginError = action.payload
+    },
+
     HandleLogin: (state, action) => {
-      console.log("useData", action);
+      state.logged = false  
+      state.loginError = false  
+      console.log("action.payload => ", action.payload)
+
+      if (action.payload.email === 'lucas@gmail.com' && action.payload.password==='123456ljp'){
+        
+        console.log("login correto")
+        state.logged = true
+      } else {
+        console.log("login invalido")
+        state.loginError = true
+      }
+      
     },
     HandleLogout: () => {
       localStorage.clear();
@@ -20,6 +40,7 @@ export const authSlice = createSlice({
   },
 });
 
-export const { HandleLogin, HandleLogout } = authSlice.actions;
+export const { HandleLogin, HandleLogout, SetLoginError } = authSlice.actions;
 
 export default authSlice.reducer;
+
