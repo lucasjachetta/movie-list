@@ -25,11 +25,8 @@ export const authSlice = createSlice({
       console.log("action.payload => ", action.payload)
 
       if (action.payload.email === 'lucas@gmail.com' && action.payload.password==='123456ljp'){
-        
-        console.log("login correto")
         state.logged = true
       } else {
-        console.log("login invalido")
         state.loginError = true
       }
       

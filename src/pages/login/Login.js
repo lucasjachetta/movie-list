@@ -17,9 +17,7 @@ function Login() {
   const {logged, loginError} = useSelector(state => state.auth)
 
   useEffect(()=>{
-    console.log("logged", logged)
-    console.log("loginError",loginError)
-    
+   
     if (logged){
       navigate('/home')
     } 
@@ -48,9 +46,6 @@ function Login() {
     
   } 
 
-
-
-  
 
   return (
     <Container>
